@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.align-items{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-around;
+}
+.flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.text-align{
+    text-align: start;
+}
+/*header-start*/
+header{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 15px 0px;
+}
+header .header-main{
+    background-color: #005751;
+
+}
+header .header-main .header-logo a h1{
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+    color: white;
+    display: block;
+}
+header .header-main .header-logo a{
+    color: #005751;
+    padding: 10px 0px;
+    display: block;
+}
+header .header-main .header-navbar{
+    padding: 0;
+}
+header .header-main .header-navbar ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+header .header-main .header-navbar ul li{
+    white-space: nowrap;
+    padding: 30px 14px;
+    color: white;   
+}
+header .header-main .header-navbar ul li a{
+        font-size: 15px;
+        padding: 0px 2px;
+        color: rgba(255, 255, 255, 0.555);
+        font-family: "Poppins", sans-serif;
+        font-weight: 550;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+        text-decoration: none;
+}
+header .header-main .header-navbar ul li a i{
+        
+        line-height: 0;
+        font-size: 12px;
+        color: white;
+}
+header .header-main .header-navbar ul ul{
+    position: absolute;
+    display:none;
+    margin-top: -30px;
+    background: white;
+    /*left: 14px;*/
+    top: 130%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+header .header-main .header-navbar ul ul li{
+    display: block;
+    padding-bottom: 10px;
+    padding-left: 5;
+    padding-top: 10px;
+    /*padding-right: 55px;*/
+}
+header .header-main .header-navbar ul ul li a{
+        font-size: 15px;
+        text-transform: none;
+        color: #444d4d;
+        display: flex;
+        font-weight: 400;
+        margin-left: 0;
+        gap: 40px;
+}
+header .header-main .header-navbar ul li:hover ul{
+    display: block;
+}
+header .header-main .btn-getstarted{
+    color: white;
+    background-color: #018880;
+    font-size: 14px;
+    padding: 8px 26px;
+    margin: 0;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.header-navbar .active{
+    color: rgba(255, 255, 255, 0.863) !important;
+    position: relative;
+}
+.header-navbar .active::before{
+    content: "";
+    position: absolute;    
+    width: 100% !important;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #018880;
+   
+}
+/*header-end*/
+
+/*hero-start*/
+
+.hero{
+    background-color: #005751;
+    width: 100%;
+    position: relative;
+    padding-top: 150px;
+    overflow: hidden;
+    padding-bottom: 120px;
+}
+.hero .hero-content h2{ 
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+.hero .hero-content p{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+.hero .hero-content .hero-btns{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+.hero .hero-content .hero-btns .btn-primary{
+    background-color: white;
+    color: #018880;
+}
+
+.hero .hero-content .hero-btns .btn-outline{
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.hero .hero-content .hero-btns .btn{
+    padding: 12px 30px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.hero .hero-content .hero-stats{
+    display: flex;
+    gap: 2.5rem;
+}
+.hero .hero-content .hero-stats .stat-item h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-family: "Raleway", sans-serif;
+}
+.hero .hero-content .hero-stats .stat-item p{
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+.hero .hero-content .hero-right{
+    width: 50%;
+    z-index: 999;
+}
+.hero .hero-content .hero-right .hero-image{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.hero .hero-content .hero-right .hero-image img{
+    border-radius: 10px;
+}
+
+/*hero-end*/
+
+/*about-start*/
+
+.about{
+    padding: 80px 0;
+    color: white;
+}
+
+section{
+    color: #444d4d;
+    scroll-margin-top: 82px;
+    overflow: clip;
+}
+.about .about-image .main-image{
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.about .about-image .experience-badge{
+    bottom: -20px;
+    right: -20px;
+    background-color: #018880;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    min-height: 120px;
+}
+.about .about-image .experience-badge .years{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.about .about-image .experience-badge .text{
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.2;
+}
+.about .about-content{
+    padding-left: 20px;
+}
+.about .about-content h2{
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    color: #003a36;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.about .about-content .lead{
+        font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color:#444d4d;
+}
+.about .about-content p{
+    color:#444d4d;
+    margin-bottom: 1.5rem;
+}
+.about .about-content .features-row{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.about .about-content .feature-item{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.about .about-content .feature-item .icon i{
+    color:#018880;
+    font-size: 2.5rem !important;
+    margin-bottom: 1rem;
+    height: 30px !important;
+    visibility: visible !important;
+}
+.about .about-content .feature-item h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #003a36;
+}
+.about .about-content .feature-item p{
+        font-size: 0.95rem;
+    margin-bottom: 0;
+}
+/*about-end*/

@@ -1,0 +1,83 @@
+.images{
+    height: 100px;
+    width: 500px;
+    background-color: aquamarine;
+}
+.navbar{
+    margin-bottom: 100px;
+}
+
+header{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+header .header-main{
+    background-color: #005751;
+    position: fixed;
+    width: 100%;
+}
+header .header-main .header-logo a h1{
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+    color: white;
+    display: block;
+}
+header .header-main .header-logo a{
+    color: #005751;
+    padding: 10px 0px;
+    display: block;
+}
+header .header-main .header-navbar{
+    padding: 0;
+}
+header .header-main .header-navbar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+header .header-main .header-navbar ul li{
+    white-space: nowrap;
+    padding: 15px 14px;
+    color: white;
+    
+}
+.header-navbar .active{
+    color: white;
+    position: relative;
+}
+.header-navbar .active::before{
+    content: "";
+    position: absolute;    
+    width: 100% !important;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #018880;
+   
+}
+header .header-main .header-navbar ul li a{
+        font-size: 15px;
+        padding: 0px 2px;
+        color: #e6f3f2;
+        display: block;
+        font-family: "Poppins", sans-serif;
+        font-weight: 550;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+        text-decoration: none;
+}
+header .header-main .btn-getstarted{
+    color: white;
+    background-color: #018880;
+    font-size: 14px;
+    padding: 8px 26px;
+    margin: 0;
+    border-radius: 4px;
+    text-decoration: none;
+}
