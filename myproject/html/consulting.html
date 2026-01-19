@@ -13,16 +13,17 @@
     
 <!--header-start-->
 
-<header>
+<header>  
         <div class="header-main fixed-top">
             <div class="container">
-                <div class="flex justify-between align-items">
+                <div class="flex justify-content-between align-items">
                     <div class="header-logo">
                         <a href="">
                             <h1>Consulting.</h1>
                         </a>
                     </div>
-                    <div class="header-navbar">
+                    <div id="navmenu">
+                        <div class="header-navbar">
                         <ul class="flex">
                             <li><a href="" class="active flex">Home</a></li>
                             <li><a href="">About</a></li>
@@ -30,7 +31,7 @@
                             <li><a href="">Why Choose Us</a></li>
                             <li><a href="">Pricing</a></li>
                             <li><a href="">Team</a></li>
-                            <li><a href="#" class="dropdown flex dropdown-toggle ">
+                            <li><a href="" class="dropdown flex dropdown-toggle">
                                 <span>Dropdown</span>
                                 </a>
                                 <ul>
@@ -44,7 +45,11 @@
                             <li><a href="">Contact</a></li>
                         </ul>
                     </div>
+                    </div>
                     <a class="btn-getstarted" href="">Get Started</a>
+                    <button class="list" onclick="navbar()">
+                        <i class="fa-solid fa-list "></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -54,27 +59,27 @@
 
 <main>
     <!--hero-start-->
-    <div class="hero">
-        <div class="container">
-            <div class="row align-items flex">
-                <div class="col-lg-6">
-                    <div class="hero-content">
+    <div class="hero ">
+        <div class="container ">
+            <div class="row align-items flex ">
+                <div class="col-lg-6 ">
+                    <div class="hero-content ">
                         <h2>Strategic Solutions for Business Growth</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="hero-btns">
-                            <a href="" class="btn btn-primary">Get a Free Consultation</a>
-                            <a href="" class="btn btn-outline">Our Services</a>
+                            <a href="" class="btn btn-one">Get a Free Consultation</a>
+                            <a href="" class="btn btn-two">Our Services</a>
                         </div>
                         <div class="hero-stats">
-                            <div class="stat-item">
+                            <div class="stats">
                                 <h3 class="oldstyle-nums">15+</h3>
                                 <p>Years Experience</p>
                             </div>
-                            <div class="stat-item">
+                            <div class="stats">
                                 <h3 class="oldstyle-nums">500+</h3>
                                 <p>Clients Worldwide</p>
                             </div>
-                            <div class="stat-item">
+                            <div class="stats">
                                 <h3 class="oldstyle-nums">98%</h3>
                                 <p>Success Rate</p>
                             </div>
@@ -83,7 +88,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-right">
-                        <div class="hero-image relative w-full overflow-hidden rounded-xl shadow-2xl curson-pointer group">
+                        <div class="hero-image relative w-full overflow-hidden rounded-xl  group">
                             <img src="https://bootstrapmade.com/content/demo/Consulting/assets/img/about/about-21.webp" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" alt="" >
                         </div>
                     </div>
@@ -94,12 +99,12 @@
     <!--hero-end-->
     <!--about-start-->
 <section class="about section">
-    <div class="container">
-        <div class="row align-items-center flex flex-wrap">
-            <div class="col-lg-6">
+    <div class="container ">
+        <div class="row align-items-center flex flex-wrap ">
+            <div class="col-lg-6 ">
                 <div class="about-image relative mb-8">
                     <img src="https://bootstrapmade.com/content/demo/Consulting/assets/img/about/about-square-12.webp" alt="" class="img-fluid main-image">
-                    <div class="experience-badge absolute">
+                    <div class="experience absolute">
                         <span class="years">15+</span>
                         <span class="text">Years of Experience</span>
                     </div>
@@ -752,6 +757,15 @@
 </footer>
 
 
+    <script>
+        function navbar()
+        {
+            var menu = document.getElementById("navmenu")
+
+            menu.classList.toggle("active")
+            
+        }
+    </script>
 
   <!--JS Here (best)-->
     <script src="js/bootstrap.bundle.min.js"></script>
